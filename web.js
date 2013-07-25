@@ -5,7 +5,7 @@ var fs = require('fs');
 var index = "index.html";
 
 app.get('/', function(request, response) {
-  var buffer = fs.readFileSync("index.html");
+  var buffer = fs.readFileSync(index);
   var string = buffer.toString();
   response.send(string);
 });
